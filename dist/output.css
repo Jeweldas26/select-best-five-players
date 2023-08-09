@@ -546,10 +546,6 @@ video {
   position: relative;
 }
 
-.sticky {
-  position: sticky;
-}
-
 .bottom-0 {
   bottom: 0px;
 }
@@ -578,8 +574,16 @@ video {
   top: 0.5rem;
 }
 
-.top-5 {
-  top: 1.25rem;
+.right-\[-300\] {
+  right: -300;
+}
+
+.right-\[px\] {
+  right: px;
+}
+
+.right-\[300px\] {
+  right: 300px;
 }
 
 .mx-auto {
@@ -631,10 +635,6 @@ video {
   display: grid;
 }
 
-.hidden {
-  display: none;
-}
-
 .h-32 {
   height: 8rem;
 }
@@ -652,20 +652,16 @@ video {
   height: fit-content;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .w-32 {
   width: 8rem;
 }
 
 .w-\[110px\] {
   width: 110px;
-}
-
-.w-\[1240px\] {
-  width: 1240px;
-}
-
-.w-\[264px\] {
-  width: 264px;
 }
 
 .w-full {
@@ -684,10 +680,6 @@ video {
   flex-basis: 25%;
 }
 
-.basis-3\/4 {
-  flex-basis: 75%;
-}
-
 .basis-\[35\%\] {
   flex-basis: 35%;
 }
@@ -698,10 +690,6 @@ video {
 
 .list-decimal {
   list-style-type: decimal;
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .justify-center {
@@ -729,8 +717,8 @@ video {
        column-gap: 2rem;
 }
 
-.gap-y-6 {
-  row-gap: 1.5rem;
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .rounded-full {
@@ -896,28 +884,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.transition-all {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.duration-150 {
-  transition-duration: 150ms;
-}
-
-.duration-1000 {
-  transition-duration: 1000ms;
-}
-
 .duration-500 {
   transition-duration: 500ms;
 }
@@ -954,6 +920,10 @@ video {
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:overflow-scroll {
+    overflow: scroll;
   }
 
   .lg\:px-0 {

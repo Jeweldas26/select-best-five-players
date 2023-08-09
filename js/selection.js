@@ -33,6 +33,7 @@ document
     if (selectedElement.innerText === "SELECT") {
       const selectCalculateContainer = document.getElementById('selection-calculation');
       selectCalculateContainer.classList.remove('right-[-300px]');
+      document.body.classList.add('overflow-hidden');
 
       const button = event.target;
       const playerName = event.target.parentNode.children[0].innerText;
