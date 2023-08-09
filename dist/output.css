@@ -574,18 +574,6 @@ video {
   top: 0.5rem;
 }
 
-.right-\[-300\] {
-  right: -300;
-}
-
-.right-\[px\] {
-  right: px;
-}
-
-.right-\[300px\] {
-  right: 300px;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -719,6 +707,10 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
 }
 
 .rounded-full {
@@ -914,6 +906,11 @@ video {
     display: none;
   }
 
+  .lg\:h-fit {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
   .lg\:basis-3\/4 {
     flex-basis: 75%;
   }
@@ -922,8 +919,16 @@ video {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .lg\:overflow-auto {
+    overflow: auto;
+  }
+
   .lg\:overflow-scroll {
     overflow: scroll;
+  }
+
+  .lg\:overflow-y-scroll {
+    overflow-y: scroll;
   }
 
   .lg\:px-0 {
